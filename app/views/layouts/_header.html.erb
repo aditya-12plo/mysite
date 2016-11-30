@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>
+  <%= @title %>
+</title>
+  <link rel="icon" href="assets/logo-nugroho-aditya.png" type="image/x-icon" />
+  
+
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= stylesheet_link_tag 'bootstrap' %>
+<%= stylesheet_link_tag 'style' %>
+
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'move-top' %>
+<%= javascript_include_tag 'easing' %>
+<%= javascript_include_tag 'jquery.min' %>
+
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+<%= csrf_meta_tags %>
+
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="keywords" content="<%= @keyword %>,nugroho aditya, aditya, nugroho, jakarta, indonesia, website developer, butuh website, harga murah, website murah" />
+<meta name="description" 
+         content="<%= @desc %>">
+
+
+</head>
+<body>

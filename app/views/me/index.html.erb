@@ -1,0 +1,519 @@
+<!-- container -->
+			<!-- header -->
+			<div id="home" class="header">
+				<div class="container">
+				<!-- top-hedader -->
+				<div class="top-header">
+					<!-- /logo -->
+					<!--top-nav---->
+					 <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+					<div class="top-nav">
+					<div class="navigation">
+					<div class="logo">
+						<h1><a href="<%= root_path %>"><span>A</span>ditya</a></h1>
+					</div>
+					<div class="navigation-right">
+						<span class="menu"><img src="assets/menu.png" alt=" " /></span>
+						<nav class="link-effect-3" id="link-effect-3">
+							<ul class="nav1 nav nav-wil">
+								<li class="active">
+
+								<a data-hover="Home" href="<%= root_path %>">Home</a></li>
+								<li><a class="scroll" data-hover="About" href="#about">About</a></li>
+								<li><a class="scroll" data-hover="Services" href="#services" >Services</a></li>
+								<li><a class="scroll" data-hover="Experience" href="#work">Experience</a></li>
+								<li><a class="scroll" data-hover="Portfolio" href="#port">Portfolio</a></li>
+								<li><a class="scroll" data-hover="Blog" href="#blogs">Blog</a></li>
+								<li><a class="scroll" data-hover="Contact" href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+							<!-- script-for-menu -->
+								<script>
+								   $( "span.menu" ).click(function() {
+									 $( "ul.nav1" ).slideToggle( 300, function() {
+									 // Animation complete.
+									  });
+									 });
+								</script>
+							<!-- /script-for-menu -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<!-- /top-hedader -->
+				</div>
+			</div>
+			<div class="banner-info">
+				<div class="col-md-7 header-right">
+					<h1>Hi !</h1>
+					<h6>WEBSITE DEVELOPER</h6>
+					<h6>PHP & ROR</h6>
+					<ul class="address">
+					
+					<li>
+							<ul class="address-text">
+								<li><b>NAME</b></li>
+								<li>NUGROHO ADITYA</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>D.O.B</b></li>
+								<li>19 MAY 1989</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>PHONE </b></li>
+								<li>+62 818 079 66660</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>E-MAIL </b></li>
+								<li><a href="mailto:nugroho.adty@gmail.com"> nugroho.adty@gmail.com</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>WEBSITE </b></li>
+								<li><a href="<%= root_path %>">www.nugrohoaditya.xyz</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>RESUME </b></li>
+								<li>
+<%= link_to 'MY RESUME' ,cv_path(format: 'pdf') ,target:'_blank' %>
+								</li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="col-md-5 header-left">
+					<img src="assets/nugroho-aditya.png" alt="">
+				</div>
+				<div class="clearfix"> </div>
+						
+		      </div>
+			</div>
+		</div>
+	</div>
+			<!-- about -->
+			<div id="about" class="about">
+				<div class="col-md-6 about-left">
+					<div id="owl-demo1" class="owl-carousel owl-carousel2">
+					                <div class="item">
+					                	<div class="about-left-grid">
+											<h2>My <span>BIO</span></h2>
+											<p align="justify">In process to achieve something, often found failures. Failure then seems to be a big wall in the process of being served and not rarely fatal to one conclusion, That is: Impossible.
+In a word impossible itself actually includes the word "I'm" and "possible", which means "maybe". Everything is possible, also at the time of failure. People - people who succeed never felt like a failure, but see failure as a learning material, and is part of the process to be successful.</p>
+											
+										</div>
+					                </div>
+					                  <div class="item">
+					                	<div class="about-left-grid">
+											<h2>My <span>Hobby</span></h2>
+											<p align="justify">My hobby is playing online games, I liked the game online When I was still in school, until now. Usually I play in at home with my friends. Whether it be a curse or not, but I rarely leave the house to play like football and more. But I believe all of the games that can be useful for relieving stress or depression.
+											</ul>
+										</div>
+					                </div>
+					                  <div class="item">
+					                	<div class="about-left-grid">
+											<h2>Bittersweet <span>a Programmer</span></h2>
+											<p align="justify">In one side this work has a very pleasant thing, because it is physically not drain a lot of energy. Only with fingers dancing on the keyboard and of course the brain that is always spinning endlessly. So much fun, most programmers will spend the night to finish a job. Not least because those with the argument that night was quieter, so that they can air-argument with a lot of coding, which is sometimes difficult to find in crowded conditions so that the concentration will be disrupted.</p>
+											<p>Keep Coding</p>
+											
+										</div>
+					                </div>
+					</div>
+				</div>
+				<div class="col-md-6 about-right">
+					
+				</div>
+				<div class="clearfix"> </div>
+							<link href="assets/owl.carousel.css" rel="stylesheet">
+							    <script src="assets/owl.carousel.js"></script>
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo1").owlCarousel({
+						items : 1,
+						lazyLoad : false,
+						autoPlay : true,
+						navigation : false,
+						navigationText :  false,
+						pagination : true,
+					});
+				});
+			</script>
+			<!-- Feedback -->
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo3").owlCarousel({
+						items : 1,
+						lazyLoad : false,
+						autoPlay : true,
+						navigation : false,
+						navigationText :  true,
+						pagination :true,
+					});
+				});
+				jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
+			</script>
+			</div>
+			<!-- /about -->
+			<!-- services -->
+			<div id="services" class="services">
+				<div class="container">
+					<div class="service-head one text-center ">
+						<h4>WHAT I DO</h4>
+						<h3>MY <span>SERVICE</span></h3>
+						<span class="border two"></span>
+					</div>
+					<!-- services-grids -->
+					<div class="wthree_about_right_grids w3l-agile">
+				<div class="col-md-12 wthree_about_right_grid">
+					
+					<div class="col-xs-12 wthree_about_right_grid_right">
+
+<div class="skillbar clearfix " data-percent="80%">
+	<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+	<div class="skillbar-bar" style="background: #5a68a5;"></div>
+	<div class="skill-bar-percent">80%</div>
+</div> <!-- End Skill Bar -->
+		
+<div class="skillbar clearfix " data-percent="25%">
+	<div class="skillbar-title" style="background: #DEB887;"><span>Rails</span></div>
+	<div class="skillbar-bar" style="background: #7FFF00;"></div>
+	<div class="skill-bar-percent">25%</div>
+</div> <!-- End Skill Bar -->
+
+
+<div class="skillbar clearfix " data-percent="75%">
+	<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+	<div class="skillbar-bar" style="background: #e67e22;"></div>
+	<div class="skill-bar-percent">70%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="50%">
+	<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+	<div class="skillbar-bar" style="background: #3498db;"></div>
+	<div class="skill-bar-percent">50%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="50%">
+	<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+	<div class="skill-bar-percent">50%</div>
+</div> <!-- End Skill Bar -->
+
+
+<div class="skillbar clearfix " data-percent="30%">
+	<div class="skillbar-title" style="background: #27ae60;"><span>SEO</span></div>
+	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+	<div class="skill-bar-percent">30%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="40%">
+	<div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+	<div class="skillbar-bar" style="background: #4288d0;"></div>
+	<div class="skill-bar-percent">40%</div>
+</div> <!-- End Skill Bar -->
+
+
+
+					</div>
+				</div>
+</div>
+					<!-- services-grids -->
+				</div>
+			</div>
+			<!-- services -->
+			<!--work-experience-->
+	<div id="work" class="work">
+		<div class="container">
+			<div class="service-head text-center">
+						<h4>WHAT I DID</h4>
+						<h3>MY <span>EXPERIENCE</span></h3>
+						<span class="border one"></span>
+					</div>
+					<div class="time-main w3l-agile">
+						
+					                        <ul class="col-md-12 timeline">
+																<li>
+																  <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+																  <div class="timeline-panel">
+																	<div class="timeline-heading">
+																	  <h4 class="timeline-title">COMPANY NAME</h4>
+																	</div>
+																	<div class="timeline-body">
+																	  <p>Lorem ipsum dolor sit amet.Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus </p>
+																	</div>
+																  </div>
+																</li>
+																<li>
+																  <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+																  <div class="timeline-panel">
+																	<div class="timeline-heading">
+																	  <h4 class="timeline-title">COMPANY NAME</h4>
+																	</div>
+																	<div class="timeline-body">
+																	  <p>Lorem ipsum dolor sit amet.Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus </p>
+																	</div>
+																  </div>
+																</li>
+																<li>
+																  <div class="timeline-badge primary"><i class="glyphicon glyphicon-briefcase"></i></div>
+																  <div class="timeline-panel">
+																	<div class="timeline-heading">
+																	  <h4 class="timeline-title">COMPANY NAME</h4>
+																	</div>
+																	<div class="timeline-body">
+																	  <p>Lorem ipsum dolor sit amet.Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus </p>
+																	</div>
+																  </div>
+																</li>
+																
+																
+																
+																<li>
+																  <div class="timeline-badge danger"><i class="glyphicon glyphicon-briefcase"></i></div>
+																  <div class="timeline-panel">
+																	<div class="timeline-heading">
+																	  <h4 class="timeline-title">COMPANY NAME</h4>
+																	</div>
+																	<div class="timeline-body">
+																	  <p>Lorem ipsum dolor sit amet.Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus </p>
+																	</div>
+																  </div>
+																</li>
+																
+																<li>
+																  <div class="timeline-badge success"><i class="glyphicon glyphicon-briefcase"></i></div>
+																  <div class="timeline-panel">
+																	<div class="timeline-heading">
+																	  <h4 class="timeline-title">COMPANY NAME</h4>
+																	</div>
+																	<div class="timeline-body">
+																	  <p>Lorem ipsum dolor sit amet.Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus </p>
+																	</div>
+																  </div>
+																</li>
+																<li>
+																  <div class="timeline-badge pass"><i class="glyphicon glyphicon-briefcase"></i></div>
+																  <div class="timeline-panel">
+																	<div class="timeline-heading">
+																	  <h4 class="timeline-title">COMPANY NAME</h4>
+																	</div>
+																	<div class="timeline-body">
+																	  <p>Lorem ipsum dolor sit amet.Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus </p>
+																	</div>
+																  </div>
+																</li>
+															</ul>
+								<div class="clearfix"></div>
+								</div>
+						</div>
+				</div>
+	<!--//work-experience-->
+
+		<!-- portfolio -->
+<div class="portfolio" id="port">
+				<div class="service-head text-center">
+						<h4>MY WORKS</h4>
+						<h3>MY <span>PORTFOLIO</span></h3>
+						<span class="border"></span>
+					</div>
+		<div class="col-md-12" style="background-color: rgba(0, 0, 0, 0.55)">
+
+ <div class="col-md-4">
+						  <a href="http://tugasakhir-nugrohoaditya.hol.es/" target="_blank"> <img src="assets/b1.jpg" alt=" " class="img-responsive"></a>
+						 
+						</div>
+		</div>
+	</div>
+	<!-- //portfolio -->
+    <!-- top-grids -->
+				<div class="blog" id="blogs">
+					<div class="container">
+						<div class="service-head text-center">
+						<h4>BLOGS</h4>
+						<h3>MY <span>BLOGS</span></h3>
+						<span class="border one"></span>
+					</div>
+					   <div class="news-grid w3l-agile">
+					    <div class="col-md-6 news-img">
+						  <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="assets/b1.jpg" alt=" " class="img-responsive"></a>
+						 
+						</div>
+					    <div class="col-md-6 news-text">
+						   <h3> <a href="#" data-toggle="modal" data-target="#myModal1">HERE GOES AN AWESOME BLOG TITLE</a></h3>
+							<ul class="news">
+								<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
+								<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
+								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>
+								<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
+							</ul>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+							<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
+					
+						</div>
+		
+						<div class="clearfix"></div>
+					 </div>
+					  <div class="news-grid">
+
+					    <div class="col-md-6 news-text two">
+						   <h3> <a href="#" data-toggle="modal" data-target="#myModal1">HERE GOES AN AWESOME BLOG TITLE</a></h3>
+							<ul class="news">
+								<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
+								<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
+								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>
+								<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
+							</ul>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+								<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
+					
+						</div>
+						<div class="col-md-6 news-img two">
+						   <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="assets/b2.jpg" alt=" " class="img-responsive"></a>
+						 
+						</div>
+						<div class="clearfix"></div>
+					 </div>
+					  <div class="news-grid">
+					    <div class="col-md-6 news-img">
+						  <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="assets/b3.jpg" alt=" " class="img-responsive"></a>
+						 
+						</div>
+					    <div class="col-md-6 news-text">
+						   <h3> <a href="#" data-toggle="modal" data-target="#myModal1">HERE GOES AN AWESOME BLOG TITLE</a></h3>
+							<ul class="news">
+								<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
+								<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
+								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>
+								<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
+							</ul>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+							<a href="#" data-toggle="modal" data-target="#myModal1" class="read hvr-shutter-in-horizontal">Read More</a>
+					
+						</div>
+		
+						<div class="clearfix"></div>
+					 </div>
+					</div>
+				</div>
+				<!-- top-grids -->
+	<!-- /blog-pop-->
+			<div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog about" role="document">
+					<div class="modal-content about">
+						<div class="modal-header">
+							<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body about">
+								<div class="about">
+									
+									  <div class="about-inner">
+									   
+									      <img src="assets/b3.jpg" alt="about"/>
+										     <h4 class="tittle">A Fews words about us</h4>
+										   <p>Lorem ipsum dolor sit amet Integer gravida,Lorem ipsum dolor sit amet Integer gravida velit,Ming sits in the corner the whole day. She's into crochet. quis dolor tristiqumsan.Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. velit quis dolor tristiqumsan.</p>
+										    <p>Lorem ipsum dolor sit amet. Integer gravida velit quis dolor tristiqumsan.anteposuerit litterarum formas humanitatis per seacula amet Integer gravida velit. </p>
+									  </div>
+												
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //blog-pop-->
+
+			<!-- /header -->
+
+		<div class="footer" id="contact">
+	<div class="container">
+	<div class="service-head one text-center">
+						<h4>CONTACT ME</h4>
+						<h3>GET <span>IN TOUCH WITH ME</span></h3>
+						<span class="border two"></span>
+					</div>
+
+		<div class="mail_us">
+			<div class="col-md-6 mail_left">
+				<div class="contact-grid1-left">
+					<div class="contact-grid1-left1">
+						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						<h4>Contact By Email</h4>
+						<ul>
+							<li> <a href="mailto:nugroho.adty@gmail.com"> nugroho.adty@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+					<div class="contact-grid1-left">
+						<div class="contact-grid1-left1">
+							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+							<h4>Contact By Phone</h4>
+							<ul>
+								<li>Phone: +62 079 66660</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contact-grid1-left">
+						<div class="contact-grid1-left1">
+							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+							<h4>Looking For Address</h4>
+							<ul>
+								<li>Address: Warakas 1</li>
+								<li>Jakarta, Indonesia.</li>
+							</ul>
+						</div>
+					</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-6 mail_right">
+
+<% if @message %>
+
+ <script>alert('<%= @message %>')</script>
+
+<% end %>
+
+
+<%= form_tag({controller: "me", action: "contact_website"}, method: "post" , class: "form-group") do %>
+
+<%= text_field_tag(:nama, "", placeholder:"Your Name", required: true) %>
+
+
+<%= email_field_tag(:email, "", placeholder:"Your Email", required: true) %>
+
+<%= text_area_tag(:pesan, "", placeholder:"Your Massage", required: true) %>
+
+
+<%= submit_tag("Submit") %>
+
+<% end %>
+
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="copy_right text-center">
+			<p>&copy; <%= Time.now.strftime("%Y") %>
+			Preface . All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts.</a></p>
+			 <ul class="social-icons two">
+							<li><a href="https://twitter.com/adit_XxX_" target="_blank"> </a></li>
+							<li><a href="https://www.facebook.com/nugroho.aditya.31" target="_blank" class="fb"> </a></li>
+							<li><a href="https://plus.google.com/u/0/111720718741398556409" target="_blank" class="in"> </a></li>
+						</ul>
+		</div>
+	</div>
+</div>
+
+						

@@ -1,0 +1,13 @@
+<%= form_tag({controller: "me", action: "contact_website"}, method: "post" , class: "form-group") do %>
+
+<%= text_field_tag(:nama, "", placeholder:"Your Name", required: true) %>
+
+
+<%= email_field_tag(:email, "", placeholder:"Your Email", required: true) %>
+
+<%= text_area_tag(:pesan, "", placeholder:"Your Massage", required: true) %>
+
+
+<%= submit_tag("Submit") %>
+
+<% end %>

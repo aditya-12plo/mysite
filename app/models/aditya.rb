@@ -1,0 +1,4 @@
+class Aditya < ApplicationRecord
+
+	
+end

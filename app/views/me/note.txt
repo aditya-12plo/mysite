@@ -1,0 +1,55 @@
+# for precompile css / js
+rake assets:precompile
+
+# for array test field
+render json: @contact
+
+
+#696969
+
+
+class UserMailMailer < ApplicationMailer
+default from: 'me@nugrohoaditya.xyz'
+#layout "new_message"
+  
+  def new_message (nama,emailnya,pesan)
+
+@nama = nama
+@emailnya = emailnya
+@pesan = pesan
+
+
+mail( :to => "nugroho.adty@gmail.com",
+      :from => emailnya,
+      :subject => "Message from Your Website")
+
+#mail(to: 'nugroho.adty@gmail.com' , subject: "Your Webaite Message")
+
+render "new_message"
+  end
+
+end
+
+
+
+
+class UserMailMailer < ApplicationMailer::Base
+
+
+attribute :nama,	:validate	=> true
+attribute :email,	:validate	=> /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+attribute :pesan,	:validate	=> true
+
+def headers
+	{
+:subject	=>	"Your Webaite Message"
+:to			=> "nugroho.adt"
+	}
+end
+
+end
+
+
+
+
+
