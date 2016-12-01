@@ -6,12 +6,12 @@ class UserMailMailer < ApplicationMailer
 @nama = nama
 @emailnya = emailnya
 @pesan = pesan
-
-
+ /mail(to: => nugroho.adty@gmail.com, from: => emailnya, :subject => "New message at JamesDong.com") 
+/
 headers['X-SMTPAPI'] = '{"category": "Drip Email"}'
 
-    mail(:to => 'nugroho.adty@gmail.com',
-     :from => emailnya,
+    mail(:to => "nugroho.adty@gmail.com",
+     :from => @emailnya,
      :subject => "Contact Request From Website"
     )
 
