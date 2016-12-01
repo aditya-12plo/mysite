@@ -29,7 +29,7 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
 
-  config.action_mailer.perform_caching = false
+  config.action_mailer.perform_caching = true
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -53,20 +53,17 @@ Rails.application.configure do
 
 
 #setting for email from gmail
-
+config.action_mailer.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :user_name => 'nugroho.adty@gmail.com',
   :password => 'Indonesia1945',
-  :domain => 'gmail.com',
+  :domain => 'nugrohoaditya.xyz',
   :address => 'smtp.gmail.com',
   :port => 587,
   :authentication => :plain,
   :enable_starttls_auto => true
 }
+config.action_mailer.default_url_options = { :host => 'portal.herokuapp.com' }
 
-config.action_mailer.default_url_options = {
-  host: "nugrohoaditya.xyz"
- 
-}
 
 end

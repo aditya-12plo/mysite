@@ -1,5 +1,6 @@
 class MeController < ApplicationController
-  
+
+
   def index
 @title = 'Nugroho Aditya'
 @keyword = 'nugroho aditya'
@@ -33,14 +34,13 @@ redirect_to root_path
 else
 	UserMailMailer.new_message(@nama,@email,@pesan).deliver
 
-  flash[:notice] = 'Your messages has been sent.'
+  flash[:notice] = 'Your message has been sent.'
 redirect_to root_path
 
 end
 
 
   end
-
 
 
 end

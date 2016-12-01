@@ -1,24 +1,16 @@
 class UserMailMailer < ApplicationMailer
-#default to: 'nugroho.adty@gmail.com'
-#default :from => "me@nugrohoaditya.xyz"  
+
+
   def new_message (nama,emailnya,pesan)
 
 @nama = nama
 @emailnya = emailnya
 @pesan = pesan
- /mail(to: => nugroho.adty@gmail.com, from: => emailnya, :subject => "New message at JamesDong.com") 
-/
-headers['X-SMTPAPI'] = '{"category": "Drip Email"}'
 
-    mail(:to => "nugroho.adty@gmail.com",
-     :from => @emailnya,
-     :subject => "Contact Request From Website"
-    )
+#mail from: %("#{nama}" <#{emailnya}>), to: 'nugroho.adty@gmail.com', subject: "Message from #{nama}"
 
-/
-mail(from: emailnya, subject: 'Contact Request From Website')
-render "new_message"
-/
-  end
+mail(from: emailnya,to: 'nugroho.adty@gmail.com', :subject => "Contact Request From Website #{nama}")
+end
+
 
 end

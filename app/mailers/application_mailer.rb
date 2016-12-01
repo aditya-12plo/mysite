@@ -1,6 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'me@nugrohoaditya.xyz'
-  layout 'mailer'
+  default from: "'Nugroho Aditya' <me@nugrohoaditya.xyz>"
+  #layout 'mailer'
 
   def new_message (nama,email,pesan)
 
